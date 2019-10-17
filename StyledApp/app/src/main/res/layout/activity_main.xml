@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--tools:layout_editor_absoluteX="-51dp"
+        tools:layout_editor_absoluteY="97dp"-->
+        <TextView
+            android:id="@+id/answer_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            app:layout_constraintBottom_toTopOf="@id/question_field"
+            style="@style/TextStyle"/>
+
+        <EditText
+            android:id="@+id/question_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/question_hint"
+            android:ems="10"
+            android:hint="@string/question_hint"
+            android:inputType="text"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@id/answer_field" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_weight="0"
+            android:text="@string/submit_label"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

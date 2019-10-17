@@ -24,13 +24,16 @@ public class MainActivity extends AppCompatActivity {
         submitButton = (Button) findViewById(R.id.submit_button);
     }
 
-    /*View.OnClickListener submitListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent();
-
-        }
-    }*/
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("question", String.valueOf(questionField.getText()));
+        outState.putString("answer", String.valueOf(answerField.getText()));
+    }
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        questionField.setText(savedInstanceState.getString("question"));
+        answerField.setText(savedInstanceState.getString("answer"));
+    }
 
     public void onClick(View view) {
         Intent intent = new Intent(MainActivity.this, AnswerActivity.class);

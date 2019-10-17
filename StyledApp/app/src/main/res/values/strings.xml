@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StyledApp</string>
+    <string name="submit_label">Ask</string>
+    <string name="answer_label">Answer</string>
+    <string name="answer_button">Answer</string>
+    <string name="question_hint">Question</string>
+</resources>

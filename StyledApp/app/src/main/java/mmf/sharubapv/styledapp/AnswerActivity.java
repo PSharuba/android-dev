@@ -27,6 +27,17 @@ public class AnswerActivity extends Activity {
         questionText.setText(question);
     }
 
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("question", String.valueOf(questionText.getText()));
+        outState.putString("answer", String.valueOf(answerField.getText()));
+    }
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        questionText.setText(savedInstanceState.getString("question"));
+        answerField.setText(savedInstanceState.getString("answer"));
+    }
+
     public void onClick(View view) {
         String answer= String.valueOf(answerField.getText()).trim();
         if(answer.isEmpty()|| answer.equals("Enter your answer!")){

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Стилизованное приложение</string>
+    <string name="submit_label">Спросить</string>
+    <string name="answer_label">Ответ</string>
+    <string name="answer_button">Ответить</string>
+    <string name="question_hint">Вопрос</string>
+</resources>
