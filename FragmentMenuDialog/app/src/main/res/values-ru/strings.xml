@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Стилизованное приложение</string>
+    <string name="main_activity_label">Основная активность</string>
+    <string name="answer_activity_label">Ответьте на вопрос:</string>
+    <string name="submit_label">Спросить</string>
+    <string name="answer_label">Ответ</string>
+    <string name="answer_button">Ответить</string>
+    <string name="question_hint">Вопрос</string>
+    <string name="text_view_template_question">Ваш вопрос:\n</string>
+    <string name="text_view_template_answer">\nОтвет:\n</string>
+    <string name="text_view_template_ingore">Ваш вопрос проигнорировали!</string>
+    <string name="no_answer">Введите ваш ответ!</string>
+    <string name="exit">Выход</string>
+    <string name="exit_warning">Вы уверены, что хотите выйти?</string>
+    <string name="y">Да</string>
+    <string name="n">Нет</string>
+</resources>

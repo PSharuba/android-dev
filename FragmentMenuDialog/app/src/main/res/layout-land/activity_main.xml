@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_label" />
+
+        <fragment
+            android:layout_marginTop="10dp"
+            android:id="@+id/main_fragment"
+            android:name="mmf.sharubapv.fragments.FieldsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--
+        <TextView
+            android:id="@+id/answer_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            style="@style/TextStyle"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_field"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/question_field"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:autofillHints="@string/question_hint"
+                android:ems="10"
+                android:hint="@string/question_hint"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@id/answer_field" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onClick"
+                android:text="@string/submit_label" />
+        </LinearLayout>
+        -->
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

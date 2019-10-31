@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_activity_label" />
+
+        <fragment
+            android:layout_marginTop="60dp"
+            android:id="@+id/answer_fragment"
+            android:name="mmf.sharubapv.fragments.FieldsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            style="@style/TextStyle"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_text"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/answer_field"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:autofillHints="@string/answer_label"
+                android:ems="10"
+                android:hint="@string/answer_label"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@id/answer_field" />
+
+            <Button
+                android:id="@+id/answer_button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onClick"
+                android:text="@string/answer_button" />
+        </LinearLayout>
+        -->
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

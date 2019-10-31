@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fragments App</string>
+    <string name="main_activity_label">Main Activity</string>
+    <string name="answer_activity_label">Answer the question:</string>
+    <string name="submit_label">Ask</string>
+    <string name="no_answer">Enter your answer!</string>
+    <string name="answer_label">Answer</string>
+    <string name="answer_button">Answer</string>
+    <string name="question_hint">Question</string>
+    <string name="text_view_template_question">Your question:\n</string>
+    <string name="text_view_template_answer">\nAnswer:\n</string>
+    <string name="text_view_template_ingore">Your question was ignored!</string>
+    <string name="exit">Exit</string>
+    <string name="exit_warning">You really want to leave?</string>
+    <string name="y">Yes</string>
+    <string name="n">N</string>
+    <string name="title_activity_answer">AnswerActivity</string>
+</resources>
