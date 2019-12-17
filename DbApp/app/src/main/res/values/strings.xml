@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">DatabaseApp</string>
-    <string name="input_first_name">First name: </string>
-    <string name="input_last_name">Last name: </string>
-    <string name="input_date">Date: </string>
-    <string name="search_button">Search</string>
-    <string name="insert_button">Insert</string>
-</resources>

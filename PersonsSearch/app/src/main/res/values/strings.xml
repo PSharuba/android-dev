@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonsSearch</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="dob">Date of birth</string>
+    <string name="insert">Insert new</string>
+    <string name="search">Find existing</string>
+</resources>
